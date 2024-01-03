@@ -7,7 +7,6 @@ import numpy as np
 import time
 runs_per_net = 2
 
-# Use the NN network phenotype and the discrete actuator force function.
 def eval_genome(genome, config):
     net = neat.nn.FeedForwardNetwork.create(genome, config)
 
@@ -17,7 +16,6 @@ def eval_genome(genome, config):
         env = gym.make("MountainCar-v0")
         state = env.reset()[0]
         done = False
-        # Run the given simulation for up to num_steps time steps.
         fitness = 0.0
         episode = 0
         while not done:
