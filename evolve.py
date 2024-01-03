@@ -1,7 +1,3 @@
-"""
-Single-pole balancing experiment using a feed-forward neural network.
-"""
-
 import multiprocessing
 import os
 import pickle
